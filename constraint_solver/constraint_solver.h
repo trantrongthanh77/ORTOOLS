@@ -16,6 +16,7 @@ struct DataModel {
   int num_vehicles;
   operations_research::RoutingIndexManager::NodeIndex depot;
   std::vector<int64_t> vehicle_capacities;
+  std::vector<std::vector<int>> pickups_deliveries;
 };
 
 class RoutingWrapper {
@@ -26,32 +27,40 @@ public:
 
   // getters
   DataModel getData() { return data; }
-  // operations_research::RoutingIndexManager getManager() { return *manager; }
-  // operations_research::RoutingModel *getRouting() { return routing.get(); }
-  // operations_research::RoutingSearchParameters getSearchParameters() { return searchParameters; }
-  // const operations_research::Assignment *getSolution() const { return solution; }
 
   void CreateRoutingIndexManager(DataModel data);
   void CreateRoutingModel();
+
+  // Add constraint data
+  void AddPickupsAndDeliveris(std::vector<std::vector<int>> pickups_deliveries);
+  void AddVehicleCapacities(std::vector<int> vehicle_capacities);
+
   int RegisterTransitCallback();
+  int RegisterDemandCallback(std::vector<int> demands);
 
   bool AddDimension(int evaluator_index, int slack_max, int capacity,
                     bool fix_start_cumul_to_zero, const std::string &name);
-  bool AddDimensionWithVehicleCapacity(int evaluator_index, int64_t slack_max,
-                                       std::vector<int64_t> vehicle_capacities,
+  bool AddDimensionWithVehicleCapacity(int evaluator_index, int slack_max,
                                        bool fix_start_cumul_to_zero,
-                                       const std::string &name);
+                                       std::string name);
+
+  void SetGlobalSpanCostCoefficient(std::string dimension_name, int coefficient);
+  void AddPickupAndDeliveryConstraint(std::string dimension_name);
+
   void CreateDefaultRoutingSearchParameters();
   void SetFirstSolutionStrategy(std::string strategy);
+  void SetLocalSearchMetaheuristic(std::string metaheuristic);
+  void SetMutableTimeLimit(int seconds);
+
   void SolveWithCurrentParameters();
+
   void PrintSolution();
 
 private:
   std::unique_ptr<operations_research::RoutingIndexManager> manager;
   std::unique_ptr<operations_research::RoutingModel> routing;
   DataModel data;
-  operations_research::RoutingSearchParameters searchParameters;
-  operations_research::FirstSolutionStrategy_Value firstSolutionStrategy;
+  operations_research::RoutingSearchParameters search_parameters;
   const operations_research::Assignment *solution;
   // Solver solver;
 };

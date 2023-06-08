@@ -15,6 +15,13 @@ namespace std {
     %template(DistanceMatrix) vector<vector<double>>;
 }
 
+namespace std {
+    %template(IntVector) vector<int>;
+}
+
+namespace std {
+    %template(PairIntVector) vector<vector<int>>;
+}
 
 %insert(cgo_comment_typedefs) %{
 #cgo LDFLAGS: -L../lib -lortools

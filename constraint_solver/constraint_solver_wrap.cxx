@@ -13,9 +13,9 @@ extern
 #ifdef __cplusplus
   "C"
 #endif
-  void cgo_panic__constraint_solver_095582e9481db22a(const char*);
+  void cgo_panic__constraint_solver_d99545c0cb2236b6(const char*);
 static void _swig_gopanic(const char *p) {
-  cgo_panic__constraint_solver_095582e9481db22a(p);
+  cgo_panic__constraint_solver_d99545c0cb2236b6(p);
 }
 
 
@@ -267,11 +267,39 @@ SWIGINTERN void std_vector_Sl_std_vector_Sl_double_Sg__Sg__set(std::vector< std:
                 else
                     throw std::out_of_range("vector index out of range");
             }
+SWIGINTERN std::vector< int >::const_reference std_vector_Sl_int_Sg__get(std::vector< int > *self,int i){
+                int size = int(self->size());
+                if (i>=0 && i<size)
+                    return (*self)[i];
+                else
+                    throw std::out_of_range("vector index out of range");
+            }
+SWIGINTERN void std_vector_Sl_int_Sg__set(std::vector< int > *self,int i,std::vector< int >::value_type const &val){
+                int size = int(self->size());
+                if (i>=0 && i<size)
+                    (*self)[i] = val;
+                else
+                    throw std::out_of_range("vector index out of range");
+            }
+SWIGINTERN std::vector< std::vector< int > >::const_reference std_vector_Sl_std_vector_Sl_int_Sg__Sg__get(std::vector< std::vector< int > > *self,int i){
+                int size = int(self->size());
+                if (i>=0 && i<size)
+                    return (*self)[i];
+                else
+                    throw std::out_of_range("vector index out of range");
+            }
+SWIGINTERN void std_vector_Sl_std_vector_Sl_int_Sg__Sg__set(std::vector< std::vector< int > > *self,int i,std::vector< std::vector< int > >::value_type const &val){
+                int size = int(self->size());
+                if (i>=0 && i<size)
+                    (*self)[i] = val;
+                else
+                    throw std::out_of_range("vector index out of range");
+            }
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void _wrap_Swig_free_constraint_solver_095582e9481db22a(void *_swig_go_0) {
+void _wrap_Swig_free_constraint_solver_d99545c0cb2236b6(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -281,7 +309,7 @@ void _wrap_Swig_free_constraint_solver_095582e9481db22a(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_constraint_solver_095582e9481db22a(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_constraint_solver_d99545c0cb2236b6(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -294,7 +322,7 @@ void *_wrap_Swig_malloc_constraint_solver_095582e9481db22a(intgo _swig_go_0) {
 }
 
 
-void _wrap_DataModel_distance_matrix_set_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0, std::vector< std::vector< double > > *_swig_go_1) {
+void _wrap_DataModel_distance_matrix_set_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0, std::vector< std::vector< double > > *_swig_go_1) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   std::vector< std::vector< double > > *arg2 = (std::vector< std::vector< double > > *) 0 ;
   
@@ -306,7 +334,7 @@ void _wrap_DataModel_distance_matrix_set_constraint_solver_095582e9481db22a(cons
 }
 
 
-std::vector< std::vector< double > > *_wrap_DataModel_distance_matrix_get_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0) {
+std::vector< std::vector< double > > *_wrap_DataModel_distance_matrix_get_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   std::vector< std::vector< double > > *result = 0 ;
   std::vector< std::vector< double > > *_swig_go_result;
@@ -319,7 +347,7 @@ std::vector< std::vector< double > > *_wrap_DataModel_distance_matrix_get_constr
 }
 
 
-void _wrap_DataModel_num_vehicles_set_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0, intgo _swig_go_1) {
+void _wrap_DataModel_num_vehicles_set_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0, intgo _swig_go_1) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   int arg2 ;
   
@@ -331,7 +359,7 @@ void _wrap_DataModel_num_vehicles_set_constraint_solver_095582e9481db22a(constra
 }
 
 
-intgo _wrap_DataModel_num_vehicles_get_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0) {
+intgo _wrap_DataModel_num_vehicles_get_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -344,7 +372,7 @@ intgo _wrap_DataModel_num_vehicles_get_constraint_solver_095582e9481db22a(constr
 }
 
 
-void _wrap_DataModel_depot_set_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0, operations_research::RoutingIndexManager::NodeIndex *_swig_go_1) {
+void _wrap_DataModel_depot_set_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0, operations_research::RoutingIndexManager::NodeIndex *_swig_go_1) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   operations_research::RoutingIndexManager::NodeIndex arg2 ;
   operations_research::RoutingIndexManager::NodeIndex *argp2 ;
@@ -363,7 +391,7 @@ void _wrap_DataModel_depot_set_constraint_solver_095582e9481db22a(constraint_sol
 }
 
 
-operations_research::RoutingIndexManager::NodeIndex *_wrap_DataModel_depot_get_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0) {
+operations_research::RoutingIndexManager::NodeIndex *_wrap_DataModel_depot_get_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   operations_research::RoutingIndexManager::NodeIndex result;
   operations_research::RoutingIndexManager::NodeIndex *_swig_go_result;
@@ -376,7 +404,7 @@ operations_research::RoutingIndexManager::NodeIndex *_wrap_DataModel_depot_get_c
 }
 
 
-void _wrap_DataModel_vehicle_capacities_set_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0, std::vector< int64_t > *_swig_go_1) {
+void _wrap_DataModel_vehicle_capacities_set_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0, std::vector< int64_t > *_swig_go_1) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   std::vector< int64_t > *arg2 = (std::vector< int64_t > *) 0 ;
   
@@ -388,7 +416,7 @@ void _wrap_DataModel_vehicle_capacities_set_constraint_solver_095582e9481db22a(c
 }
 
 
-std::vector< int64_t > *_wrap_DataModel_vehicle_capacities_get_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0) {
+std::vector< int64_t > *_wrap_DataModel_vehicle_capacities_get_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   std::vector< int64_t > *result = 0 ;
   std::vector< int64_t > *_swig_go_result;
@@ -401,7 +429,32 @@ std::vector< int64_t > *_wrap_DataModel_vehicle_capacities_get_constraint_solver
 }
 
 
-constraint_solver::DataModel *_wrap_new_DataModel_constraint_solver_095582e9481db22a() {
+void _wrap_DataModel_pickups_deliveries_set_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0, std::vector< std::vector< int > > *_swig_go_1) {
+  constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
+  std::vector< std::vector< int > > *arg2 = (std::vector< std::vector< int > > *) 0 ;
+  
+  arg1 = *(constraint_solver::DataModel **)&_swig_go_0; 
+  arg2 = *(std::vector< std::vector< int > > **)&_swig_go_1; 
+  
+  if (arg1) (arg1)->pickups_deliveries = *arg2;
+  
+}
+
+
+std::vector< std::vector< int > > *_wrap_DataModel_pickups_deliveries_get_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0) {
+  constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
+  std::vector< std::vector< int > > *result = 0 ;
+  std::vector< std::vector< int > > *_swig_go_result;
+  
+  arg1 = *(constraint_solver::DataModel **)&_swig_go_0; 
+  
+  result = (std::vector< std::vector< int > > *)& ((arg1)->pickups_deliveries);
+  *(std::vector< std::vector< int > > **)&_swig_go_result = (std::vector< std::vector< int > > *)result; 
+  return _swig_go_result;
+}
+
+
+constraint_solver::DataModel *_wrap_new_DataModel_constraint_solver_d99545c0cb2236b6() {
   constraint_solver::DataModel *result = 0 ;
   constraint_solver::DataModel *_swig_go_result;
   
@@ -412,7 +465,7 @@ constraint_solver::DataModel *_wrap_new_DataModel_constraint_solver_095582e9481d
 }
 
 
-void _wrap_delete_DataModel_constraint_solver_095582e9481db22a(constraint_solver::DataModel *_swig_go_0) {
+void _wrap_delete_DataModel_constraint_solver_d99545c0cb2236b6(constraint_solver::DataModel *_swig_go_0) {
   constraint_solver::DataModel *arg1 = (constraint_solver::DataModel *) 0 ;
   
   arg1 = *(constraint_solver::DataModel **)&_swig_go_0; 
@@ -422,7 +475,7 @@ void _wrap_delete_DataModel_constraint_solver_095582e9481db22a(constraint_solver
 }
 
 
-constraint_solver::RoutingWrapper *_wrap_new_RoutingWrapper_constraint_solver_095582e9481db22a() {
+constraint_solver::RoutingWrapper *_wrap_new_RoutingWrapper_constraint_solver_d99545c0cb2236b6() {
   constraint_solver::RoutingWrapper *result = 0 ;
   constraint_solver::RoutingWrapper *_swig_go_result;
   
@@ -433,7 +486,7 @@ constraint_solver::RoutingWrapper *_wrap_new_RoutingWrapper_constraint_solver_09
 }
 
 
-void _wrap_RoutingWrapper_InitDataModel_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0, std::vector< std::vector< double > > *_swig_go_1, intgo _swig_go_2, intgo _swig_go_3) {
+void _wrap_RoutingWrapper_InitDataModel_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, std::vector< std::vector< double > > *_swig_go_1, intgo _swig_go_2, intgo _swig_go_3) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   std::vector< std::vector< double > > arg2 ;
   int arg3 ;
@@ -456,7 +509,7 @@ void _wrap_RoutingWrapper_InitDataModel_constraint_solver_095582e9481db22a(const
 }
 
 
-constraint_solver::DataModel *_wrap_RoutingWrapper_getData_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+constraint_solver::DataModel *_wrap_RoutingWrapper_getData_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   constraint_solver::DataModel result;
   constraint_solver::DataModel *_swig_go_result;
@@ -469,7 +522,7 @@ constraint_solver::DataModel *_wrap_RoutingWrapper_getData_constraint_solver_095
 }
 
 
-void _wrap_RoutingWrapper_CreateRoutingIndexManager_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0, constraint_solver::DataModel *_swig_go_1) {
+void _wrap_RoutingWrapper_CreateRoutingIndexManager_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, constraint_solver::DataModel *_swig_go_1) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   constraint_solver::DataModel arg2 ;
   constraint_solver::DataModel *argp2 ;
@@ -488,7 +541,7 @@ void _wrap_RoutingWrapper_CreateRoutingIndexManager_constraint_solver_095582e948
 }
 
 
-void _wrap_RoutingWrapper_CreateRoutingModel_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+void _wrap_RoutingWrapper_CreateRoutingModel_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   
   arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
@@ -498,7 +551,45 @@ void _wrap_RoutingWrapper_CreateRoutingModel_constraint_solver_095582e9481db22a(
 }
 
 
-intgo _wrap_RoutingWrapper_RegisterTransitCallback_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+void _wrap_RoutingWrapper_AddPickupsAndDeliveris_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, std::vector< std::vector< int > > *_swig_go_1) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  std::vector< std::vector< int > > arg2 ;
+  std::vector< std::vector< int > > *argp2 ;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  
+  argp2 = (std::vector< std::vector< int > > *)_swig_go_1;
+  if (argp2 == NULL) {
+    _swig_gopanic("Attempt to dereference null std::vector< std::vector< int > >");
+  }
+  arg2 = (std::vector< std::vector< int > >)*argp2;
+  
+  
+  (arg1)->AddPickupsAndDeliveris(arg2);
+  
+}
+
+
+void _wrap_RoutingWrapper_AddVehicleCapacities_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, std::vector< int > *_swig_go_1) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  std::vector< int > arg2 ;
+  std::vector< int > *argp2 ;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  
+  argp2 = (std::vector< int > *)_swig_go_1;
+  if (argp2 == NULL) {
+    _swig_gopanic("Attempt to dereference null std::vector< int >");
+  }
+  arg2 = (std::vector< int >)*argp2;
+  
+  
+  (arg1)->AddVehicleCapacities(arg2);
+  
+}
+
+
+intgo _wrap_RoutingWrapper_RegisterTransitCallback_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   int result;
   intgo _swig_go_result;
@@ -511,7 +602,29 @@ intgo _wrap_RoutingWrapper_RegisterTransitCallback_constraint_solver_095582e9481
 }
 
 
-bool _wrap_RoutingWrapper_AddDimension_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, bool _swig_go_4, _gostring_ _swig_go_5) {
+intgo _wrap_RoutingWrapper_RegisterDemandCallback_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, std::vector< int > *_swig_go_1) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  std::vector< int > arg2 ;
+  std::vector< int > *argp2 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  
+  argp2 = (std::vector< int > *)_swig_go_1;
+  if (argp2 == NULL) {
+    _swig_gopanic("Attempt to dereference null std::vector< int >");
+  }
+  arg2 = (std::vector< int >)*argp2;
+  
+  
+  result = (int)(arg1)->RegisterDemandCallback(arg2);
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+bool _wrap_RoutingWrapper_AddDimension_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, bool _swig_go_4, _gostring_ _swig_go_5) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   int arg2 ;
   int arg3 ;
@@ -537,47 +650,54 @@ bool _wrap_RoutingWrapper_AddDimension_constraint_solver_095582e9481db22a(constr
 }
 
 
-bool _wrap_RoutingWrapper_AddDimensionWithVehicleCapacity_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0, intgo _swig_go_1, int64_t *_swig_go_2, std::vector< int64_t > *_swig_go_3, bool _swig_go_4, _gostring_ _swig_go_5) {
+bool _wrap_RoutingWrapper_AddDimensionWithVehicleCapacity_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2, bool _swig_go_3, _gostring_ _swig_go_4) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   int arg2 ;
-  int64_t arg3 ;
-  SwigValueWrapper< std::vector< int64_t > > arg4 ;
-  bool arg5 ;
-  std::string *arg6 = 0 ;
-  int64_t *argp3 ;
-  std::vector< int64_t > *argp4 ;
+  int arg3 ;
+  bool arg4 ;
+  std::string arg5 ;
   bool result;
   bool _swig_go_result;
   
   arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
   arg2 = (int)_swig_go_1; 
+  arg3 = (int)_swig_go_2; 
+  arg4 = (bool)_swig_go_3; 
+  (&arg5)->assign(_swig_go_4.p, _swig_go_4.n); 
   
-  argp3 = (int64_t *)_swig_go_2;
-  if (argp3 == NULL) {
-    _swig_gopanic("Attempt to dereference null int64_t");
-  }
-  arg3 = (int64_t)*argp3;
-  
-  
-  argp4 = (std::vector< int64_t > *)_swig_go_3;
-  if (argp4 == NULL) {
-    _swig_gopanic("Attempt to dereference null std::vector< int64_t >");
-  }
-  arg4 = (std::vector< int64_t >)*argp4;
-  
-  arg5 = (bool)_swig_go_4; 
-  
-  std::string arg6_str(_swig_go_5.p, _swig_go_5.n);
-  arg6 = &arg6_str;
-  
-  
-  result = (bool)(arg1)->AddDimensionWithVehicleCapacity(arg2,arg3,arg4,arg5,(std::string const &)*arg6);
+  result = (bool)(arg1)->AddDimensionWithVehicleCapacity(arg2,arg3,arg4,arg5);
   _swig_go_result = result; 
   return _swig_go_result;
 }
 
 
-void _wrap_RoutingWrapper_CreateDefaultRoutingSearchParameters_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+void _wrap_RoutingWrapper_SetGlobalSpanCostCoefficient_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, _gostring_ _swig_go_1, intgo _swig_go_2) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  std::string arg2 ;
+  int arg3 ;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  (&arg2)->assign(_swig_go_1.p, _swig_go_1.n); 
+  arg3 = (int)_swig_go_2; 
+  
+  (arg1)->SetGlobalSpanCostCoefficient(arg2,arg3);
+  
+}
+
+
+void _wrap_RoutingWrapper_AddPickupAndDeliveryConstraint_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, _gostring_ _swig_go_1) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  std::string arg2 ;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  (&arg2)->assign(_swig_go_1.p, _swig_go_1.n); 
+  
+  (arg1)->AddPickupAndDeliveryConstraint(arg2);
+  
+}
+
+
+void _wrap_RoutingWrapper_CreateDefaultRoutingSearchParameters_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   
   arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
@@ -587,7 +707,7 @@ void _wrap_RoutingWrapper_CreateDefaultRoutingSearchParameters_constraint_solver
 }
 
 
-void _wrap_RoutingWrapper_SetFirstSolutionStrategy_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_RoutingWrapper_SetFirstSolutionStrategy_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, _gostring_ _swig_go_1) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   std::string arg2 ;
   
@@ -599,7 +719,31 @@ void _wrap_RoutingWrapper_SetFirstSolutionStrategy_constraint_solver_095582e9481
 }
 
 
-void _wrap_RoutingWrapper_SolveWithCurrentParameters_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+void _wrap_RoutingWrapper_SetLocalSearchMetaheuristic_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, _gostring_ _swig_go_1) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  std::string arg2 ;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  (&arg2)->assign(_swig_go_1.p, _swig_go_1.n); 
+  
+  (arg1)->SetLocalSearchMetaheuristic(arg2);
+  
+}
+
+
+void _wrap_RoutingWrapper_SetMutableTimeLimit_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0, intgo _swig_go_1) {
+  constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
+  int arg2 ;
+  
+  arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  
+  (arg1)->SetMutableTimeLimit(arg2);
+  
+}
+
+
+void _wrap_RoutingWrapper_SolveWithCurrentParameters_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   
   arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
@@ -609,7 +753,7 @@ void _wrap_RoutingWrapper_SolveWithCurrentParameters_constraint_solver_095582e94
 }
 
 
-void _wrap_RoutingWrapper_PrintSolution_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+void _wrap_RoutingWrapper_PrintSolution_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   
   arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
@@ -619,7 +763,7 @@ void _wrap_RoutingWrapper_PrintSolution_constraint_solver_095582e9481db22a(const
 }
 
 
-void _wrap_delete_RoutingWrapper_constraint_solver_095582e9481db22a(constraint_solver::RoutingWrapper *_swig_go_0) {
+void _wrap_delete_RoutingWrapper_constraint_solver_d99545c0cb2236b6(constraint_solver::RoutingWrapper *_swig_go_0) {
   constraint_solver::RoutingWrapper *arg1 = (constraint_solver::RoutingWrapper *) 0 ;
   
   arg1 = *(constraint_solver::RoutingWrapper **)&_swig_go_0; 
@@ -629,7 +773,7 @@ void _wrap_delete_RoutingWrapper_constraint_solver_095582e9481db22a(constraint_s
 }
 
 
-std::vector< double > *_wrap_new_DoubleVector__SWIG_0_constraint_solver_095582e9481db22a() {
+std::vector< double > *_wrap_new_DoubleVector__SWIG_0_constraint_solver_d99545c0cb2236b6() {
   std::vector< double > *result = 0 ;
   std::vector< double > *_swig_go_result;
   
@@ -640,7 +784,7 @@ std::vector< double > *_wrap_new_DoubleVector__SWIG_0_constraint_solver_095582e9
 }
 
 
-std::vector< double > *_wrap_new_DoubleVector__SWIG_1_constraint_solver_095582e9481db22a(long long _swig_go_0) {
+std::vector< double > *_wrap_new_DoubleVector__SWIG_1_constraint_solver_d99545c0cb2236b6(long long _swig_go_0) {
   std::vector< double >::size_type arg1 ;
   std::vector< double > *result = 0 ;
   std::vector< double > *_swig_go_result;
@@ -653,7 +797,7 @@ std::vector< double > *_wrap_new_DoubleVector__SWIG_1_constraint_solver_095582e9
 }
 
 
-std::vector< double > *_wrap_new_DoubleVector__SWIG_2_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0) {
+std::vector< double > *_wrap_new_DoubleVector__SWIG_2_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0) {
   std::vector< double > *arg1 = 0 ;
   std::vector< double > *result = 0 ;
   std::vector< double > *_swig_go_result;
@@ -666,7 +810,7 @@ std::vector< double > *_wrap_new_DoubleVector__SWIG_2_constraint_solver_095582e9
 }
 
 
-long long _wrap_DoubleVector_size_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0) {
+long long _wrap_DoubleVector_size_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   std::vector< double >::size_type result;
   long long _swig_go_result;
@@ -679,7 +823,7 @@ long long _wrap_DoubleVector_size_constraint_solver_095582e9481db22a(std::vector
 }
 
 
-long long _wrap_DoubleVector_capacity_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0) {
+long long _wrap_DoubleVector_capacity_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   std::vector< double >::size_type result;
   long long _swig_go_result;
@@ -692,7 +836,7 @@ long long _wrap_DoubleVector_capacity_constraint_solver_095582e9481db22a(std::ve
 }
 
 
-void _wrap_DoubleVector_reserve_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0, long long _swig_go_1) {
+void _wrap_DoubleVector_reserve_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0, long long _swig_go_1) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   std::vector< double >::size_type arg2 ;
   
@@ -704,7 +848,7 @@ void _wrap_DoubleVector_reserve_constraint_solver_095582e9481db22a(std::vector< 
 }
 
 
-bool _wrap_DoubleVector_isEmpty_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0) {
+bool _wrap_DoubleVector_isEmpty_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -717,7 +861,7 @@ bool _wrap_DoubleVector_isEmpty_constraint_solver_095582e9481db22a(std::vector< 
 }
 
 
-void _wrap_DoubleVector_clear_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0) {
+void _wrap_DoubleVector_clear_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   
   arg1 = *(std::vector< double > **)&_swig_go_0; 
@@ -727,7 +871,7 @@ void _wrap_DoubleVector_clear_constraint_solver_095582e9481db22a(std::vector< do
 }
 
 
-void _wrap_DoubleVector_add_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0, double _swig_go_1) {
+void _wrap_DoubleVector_add_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0, double _swig_go_1) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   std::vector< double >::value_type *arg2 = 0 ;
   
@@ -739,7 +883,7 @@ void _wrap_DoubleVector_add_constraint_solver_095582e9481db22a(std::vector< doub
 }
 
 
-double _wrap_DoubleVector_get_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0, intgo _swig_go_1) {
+double _wrap_DoubleVector_get_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0, intgo _swig_go_1) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   int arg2 ;
   std::vector< double >::value_type *result = 0 ;
@@ -760,7 +904,7 @@ double _wrap_DoubleVector_get_constraint_solver_095582e9481db22a(std::vector< do
 }
 
 
-void _wrap_DoubleVector_set_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0, intgo _swig_go_1, double _swig_go_2) {
+void _wrap_DoubleVector_set_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0, intgo _swig_go_1, double _swig_go_2) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   int arg2 ;
   std::vector< double >::value_type *arg3 = 0 ;
@@ -780,7 +924,7 @@ void _wrap_DoubleVector_set_constraint_solver_095582e9481db22a(std::vector< doub
 }
 
 
-void _wrap_delete_DoubleVector_constraint_solver_095582e9481db22a(std::vector< double > *_swig_go_0) {
+void _wrap_delete_DoubleVector_constraint_solver_d99545c0cb2236b6(std::vector< double > *_swig_go_0) {
   std::vector< double > *arg1 = (std::vector< double > *) 0 ;
   
   arg1 = *(std::vector< double > **)&_swig_go_0; 
@@ -790,7 +934,7 @@ void _wrap_delete_DoubleVector_constraint_solver_095582e9481db22a(std::vector< d
 }
 
 
-std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_0_constraint_solver_095582e9481db22a() {
+std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_0_constraint_solver_d99545c0cb2236b6() {
   std::vector< std::vector< double > > *result = 0 ;
   std::vector< std::vector< double > > *_swig_go_result;
   
@@ -801,7 +945,7 @@ std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_0_constrain
 }
 
 
-std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_1_constraint_solver_095582e9481db22a(long long _swig_go_0) {
+std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_1_constraint_solver_d99545c0cb2236b6(long long _swig_go_0) {
   std::vector< std::vector< double > >::size_type arg1 ;
   std::vector< std::vector< double > > *result = 0 ;
   std::vector< std::vector< double > > *_swig_go_result;
@@ -814,7 +958,7 @@ std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_1_constrain
 }
 
 
-std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_2_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0) {
+std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_2_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0) {
   std::vector< std::vector< double > > *arg1 = 0 ;
   std::vector< std::vector< double > > *result = 0 ;
   std::vector< std::vector< double > > *_swig_go_result;
@@ -827,7 +971,7 @@ std::vector< std::vector< double > > *_wrap_new_DistanceMatrix__SWIG_2_constrain
 }
 
 
-long long _wrap_DistanceMatrix_size_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0) {
+long long _wrap_DistanceMatrix_size_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   std::vector< std::vector< double > >::size_type result;
   long long _swig_go_result;
@@ -840,7 +984,7 @@ long long _wrap_DistanceMatrix_size_constraint_solver_095582e9481db22a(std::vect
 }
 
 
-long long _wrap_DistanceMatrix_capacity_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0) {
+long long _wrap_DistanceMatrix_capacity_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   std::vector< std::vector< double > >::size_type result;
   long long _swig_go_result;
@@ -853,7 +997,7 @@ long long _wrap_DistanceMatrix_capacity_constraint_solver_095582e9481db22a(std::
 }
 
 
-void _wrap_DistanceMatrix_reserve_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0, long long _swig_go_1) {
+void _wrap_DistanceMatrix_reserve_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0, long long _swig_go_1) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   std::vector< std::vector< double > >::size_type arg2 ;
   
@@ -865,7 +1009,7 @@ void _wrap_DistanceMatrix_reserve_constraint_solver_095582e9481db22a(std::vector
 }
 
 
-bool _wrap_DistanceMatrix_isEmpty_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0) {
+bool _wrap_DistanceMatrix_isEmpty_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -878,7 +1022,7 @@ bool _wrap_DistanceMatrix_isEmpty_constraint_solver_095582e9481db22a(std::vector
 }
 
 
-void _wrap_DistanceMatrix_clear_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0) {
+void _wrap_DistanceMatrix_clear_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   
   arg1 = *(std::vector< std::vector< double > > **)&_swig_go_0; 
@@ -888,7 +1032,7 @@ void _wrap_DistanceMatrix_clear_constraint_solver_095582e9481db22a(std::vector< 
 }
 
 
-void _wrap_DistanceMatrix_add_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0, std::vector< double > *_swig_go_1) {
+void _wrap_DistanceMatrix_add_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0, std::vector< double > *_swig_go_1) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   std::vector< std::vector< double > >::value_type *arg2 = 0 ;
   
@@ -900,7 +1044,7 @@ void _wrap_DistanceMatrix_add_constraint_solver_095582e9481db22a(std::vector< st
 }
 
 
-std::vector< double > *_wrap_DistanceMatrix_get_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0, intgo _swig_go_1) {
+std::vector< double > *_wrap_DistanceMatrix_get_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0, intgo _swig_go_1) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   int arg2 ;
   std::vector< std::vector< double > >::value_type *result = 0 ;
@@ -921,7 +1065,7 @@ std::vector< double > *_wrap_DistanceMatrix_get_constraint_solver_095582e9481db2
 }
 
 
-void _wrap_DistanceMatrix_set_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0, intgo _swig_go_1, std::vector< double > *_swig_go_2) {
+void _wrap_DistanceMatrix_set_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0, intgo _swig_go_1, std::vector< double > *_swig_go_2) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   int arg2 ;
   std::vector< std::vector< double > >::value_type *arg3 = 0 ;
@@ -941,10 +1085,334 @@ void _wrap_DistanceMatrix_set_constraint_solver_095582e9481db22a(std::vector< st
 }
 
 
-void _wrap_delete_DistanceMatrix_constraint_solver_095582e9481db22a(std::vector< std::vector< double > > *_swig_go_0) {
+void _wrap_delete_DistanceMatrix_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< double > > *_swig_go_0) {
   std::vector< std::vector< double > > *arg1 = (std::vector< std::vector< double > > *) 0 ;
   
   arg1 = *(std::vector< std::vector< double > > **)&_swig_go_0; 
+  
+  delete arg1;
+  
+}
+
+
+std::vector< int > *_wrap_new_IntVector__SWIG_0_constraint_solver_d99545c0cb2236b6() {
+  std::vector< int > *result = 0 ;
+  std::vector< int > *_swig_go_result;
+  
+  
+  result = (std::vector< int > *)new std::vector< int >();
+  *(std::vector< int > **)&_swig_go_result = (std::vector< int > *)result; 
+  return _swig_go_result;
+}
+
+
+std::vector< int > *_wrap_new_IntVector__SWIG_1_constraint_solver_d99545c0cb2236b6(long long _swig_go_0) {
+  std::vector< int >::size_type arg1 ;
+  std::vector< int > *result = 0 ;
+  std::vector< int > *_swig_go_result;
+  
+  arg1 = (size_t)_swig_go_0; 
+  
+  result = (std::vector< int > *)new std::vector< int >(arg1);
+  *(std::vector< int > **)&_swig_go_result = (std::vector< int > *)result; 
+  return _swig_go_result;
+}
+
+
+std::vector< int > *_wrap_new_IntVector__SWIG_2_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0) {
+  std::vector< int > *arg1 = 0 ;
+  std::vector< int > *result = 0 ;
+  std::vector< int > *_swig_go_result;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  
+  result = (std::vector< int > *)new std::vector< int >((std::vector< int > const &)*arg1);
+  *(std::vector< int > **)&_swig_go_result = (std::vector< int > *)result; 
+  return _swig_go_result;
+}
+
+
+long long _wrap_IntVector_size_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  std::vector< int >::size_type result;
+  long long _swig_go_result;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  
+  result = ((std::vector< int > const *)arg1)->size();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+long long _wrap_IntVector_capacity_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  std::vector< int >::size_type result;
+  long long _swig_go_result;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  
+  result = ((std::vector< int > const *)arg1)->capacity();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_IntVector_reserve_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0, long long _swig_go_1) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  std::vector< int >::size_type arg2 ;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  arg2 = (size_t)_swig_go_1; 
+  
+  (arg1)->reserve(arg2);
+  
+}
+
+
+bool _wrap_IntVector_isEmpty_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  bool result;
+  bool _swig_go_result;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  
+  result = (bool)((std::vector< int > const *)arg1)->empty();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_IntVector_clear_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  
+  (arg1)->clear();
+  
+}
+
+
+void _wrap_IntVector_add_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0, intgo _swig_go_1) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  std::vector< int >::value_type *arg2 = 0 ;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  arg2 = (std::vector< int >::value_type *)&_swig_go_1; 
+  
+  (arg1)->push_back((std::vector< int >::value_type const &)*arg2);
+  
+  
+}
+
+
+intgo _wrap_IntVector_get_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0, intgo _swig_go_1) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  int arg2 ;
+  std::vector< int >::value_type *result = 0 ;
+  intgo _swig_go_result;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  
+  try {
+    result = (std::vector< int >::value_type *) &std_vector_Sl_int_Sg__get(arg1,arg2);
+  } catch(std::out_of_range &_e) {
+    (void)_e;
+    _swig_gopanic("C++ std::out_of_range exception thrown");
+    
+  }
+  _swig_go_result = (int)*result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_IntVector_set_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0, intgo _swig_go_1, intgo _swig_go_2) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  int arg2 ;
+  std::vector< int >::value_type *arg3 = 0 ;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  arg3 = (std::vector< int >::value_type *)&_swig_go_2; 
+  
+  try {
+    std_vector_Sl_int_Sg__set(arg1,arg2,(int const &)*arg3);
+  } catch(std::out_of_range &_e) {
+    (void)_e;
+    _swig_gopanic("C++ std::out_of_range exception thrown");
+    
+  }
+  
+  
+}
+
+
+void _wrap_delete_IntVector_constraint_solver_d99545c0cb2236b6(std::vector< int > *_swig_go_0) {
+  std::vector< int > *arg1 = (std::vector< int > *) 0 ;
+  
+  arg1 = *(std::vector< int > **)&_swig_go_0; 
+  
+  delete arg1;
+  
+}
+
+
+std::vector< std::vector< int > > *_wrap_new_PairIntVector__SWIG_0_constraint_solver_d99545c0cb2236b6() {
+  std::vector< std::vector< int > > *result = 0 ;
+  std::vector< std::vector< int > > *_swig_go_result;
+  
+  
+  result = (std::vector< std::vector< int > > *)new std::vector< std::vector< int > >();
+  *(std::vector< std::vector< int > > **)&_swig_go_result = (std::vector< std::vector< int > > *)result; 
+  return _swig_go_result;
+}
+
+
+std::vector< std::vector< int > > *_wrap_new_PairIntVector__SWIG_1_constraint_solver_d99545c0cb2236b6(long long _swig_go_0) {
+  std::vector< std::vector< int > >::size_type arg1 ;
+  std::vector< std::vector< int > > *result = 0 ;
+  std::vector< std::vector< int > > *_swig_go_result;
+  
+  arg1 = (size_t)_swig_go_0; 
+  
+  result = (std::vector< std::vector< int > > *)new std::vector< std::vector< int > >(arg1);
+  *(std::vector< std::vector< int > > **)&_swig_go_result = (std::vector< std::vector< int > > *)result; 
+  return _swig_go_result;
+}
+
+
+std::vector< std::vector< int > > *_wrap_new_PairIntVector__SWIG_2_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0) {
+  std::vector< std::vector< int > > *arg1 = 0 ;
+  std::vector< std::vector< int > > *result = 0 ;
+  std::vector< std::vector< int > > *_swig_go_result;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  
+  result = (std::vector< std::vector< int > > *)new std::vector< std::vector< int > >((std::vector< std::vector< int > > const &)*arg1);
+  *(std::vector< std::vector< int > > **)&_swig_go_result = (std::vector< std::vector< int > > *)result; 
+  return _swig_go_result;
+}
+
+
+long long _wrap_PairIntVector_size_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  std::vector< std::vector< int > >::size_type result;
+  long long _swig_go_result;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  
+  result = ((std::vector< std::vector< int > > const *)arg1)->size();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+long long _wrap_PairIntVector_capacity_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  std::vector< std::vector< int > >::size_type result;
+  long long _swig_go_result;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  
+  result = ((std::vector< std::vector< int > > const *)arg1)->capacity();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_PairIntVector_reserve_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0, long long _swig_go_1) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  std::vector< std::vector< int > >::size_type arg2 ;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  arg2 = (size_t)_swig_go_1; 
+  
+  (arg1)->reserve(arg2);
+  
+}
+
+
+bool _wrap_PairIntVector_isEmpty_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  bool result;
+  bool _swig_go_result;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  
+  result = (bool)((std::vector< std::vector< int > > const *)arg1)->empty();
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_PairIntVector_clear_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  
+  (arg1)->clear();
+  
+}
+
+
+void _wrap_PairIntVector_add_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0, std::vector< int > *_swig_go_1) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  std::vector< std::vector< int > >::value_type *arg2 = 0 ;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  arg2 = *(std::vector< std::vector< int > >::value_type **)&_swig_go_1; 
+  
+  (arg1)->push_back((std::vector< std::vector< int > >::value_type const &)*arg2);
+  
+}
+
+
+std::vector< int > *_wrap_PairIntVector_get_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0, intgo _swig_go_1) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  int arg2 ;
+  std::vector< std::vector< int > >::value_type *result = 0 ;
+  std::vector< int > *_swig_go_result;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  
+  try {
+    result = (std::vector< std::vector< int > >::value_type *) &std_vector_Sl_std_vector_Sl_int_Sg__Sg__get(arg1,arg2);
+  } catch(std::out_of_range &_e) {
+    (void)_e;
+    _swig_gopanic("C++ std::out_of_range exception thrown");
+    
+  }
+  *(std::vector< std::vector< int > >::value_type **)&_swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_PairIntVector_set_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0, intgo _swig_go_1, std::vector< int > *_swig_go_2) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  int arg2 ;
+  std::vector< std::vector< int > >::value_type *arg3 = 0 ;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  arg3 = *(std::vector< std::vector< int > >::value_type **)&_swig_go_2; 
+  
+  try {
+    std_vector_Sl_std_vector_Sl_int_Sg__Sg__set(arg1,arg2,(std::vector< int > const &)*arg3);
+  } catch(std::out_of_range &_e) {
+    (void)_e;
+    _swig_gopanic("C++ std::out_of_range exception thrown");
+    
+  }
+  
+}
+
+
+void _wrap_delete_PairIntVector_constraint_solver_d99545c0cb2236b6(std::vector< std::vector< int > > *_swig_go_0) {
+  std::vector< std::vector< int > > *arg1 = (std::vector< std::vector< int > > *) 0 ;
+  
+  arg1 = *(std::vector< std::vector< int > > **)&_swig_go_0; 
   
   delete arg1;
   
